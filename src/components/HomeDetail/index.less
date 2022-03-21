@@ -1,0 +1,42 @@
+.home-detail{
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  height: 323px;
+  scrollbar-width: none;
+  &::-webkit-scrollbar{
+    display: none;
+  }
+  &::--scrollbar{
+    display: none;
+  }
+  .detail-item{
+    width: 25%;
+    border: 1px solid #ccc;
+    border-left: none;
+    padding: 10px;
+    img{
+      width: 100%;
+      height: 100px;
+    }
+
+    &:nth-child(4n+1){
+      border: 1px solid #ccc;
+    }
+    &:nth-child(n+5){
+      border-top: none;
+    }
+    .intro{
+      color: #ccc;
+      padding: 3px 0;
+    }
+    .foot{
+      display: flex;
+      justify-content: space-between;
+      border-top: 3px solid #ccc;
+      border-radius: 1.5px;
+      color: #ccc;
+      padding: 3px 0;
+    }
+  }
+}
