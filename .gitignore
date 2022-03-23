@@ -4,6 +4,7 @@
 /node_modules
 /egg-beehive-main
 /eggStatic
+/server
 /.pnp
 .pnp.js
 
